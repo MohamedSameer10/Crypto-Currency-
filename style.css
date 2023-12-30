@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --color: rgb(3,255,184);
+    --greycolor: rgb(175, 175, 175);
+    --bgcolor: black;
+}
+header{
+    min-height: 100vh;
+}
+.navcontents{
+    margin-top: -0.4em;
+    padding-left: 1em;
+    padding-right: 2em;
+}
+.navcontents,.navcontents .heading,.navlinks ul,.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.1em;
+    background-color: var(--bgcolor);
+}
+.heading h1{
+    color: var(--color);
+    font-size: 3em;
+    font-weight: 300;
+}
+.heading ul{
+    list-style: none;
+    margin-top: 0.5em;
+}
+.heading ul li{
+    padding-bottom: 0.1em;
+    font-size: 0.7em;
+    font-weight: 500;
+}
+.navcontents li,.navlinks ul li a{
+    color: var(--greycolor);
+    text-decoration: none;
+
+}
+.navlinks ul{
+    gap: 2em;
+}
+.navcontents li,.navlinks ul li a,.navlinks ul li{
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+.navlinks ul li a:hover,header .buttons button:first-child:hover{
+    color: white;
+}
+.buttons{
+    gap: 1em;
+}
+.buttons button,.content .button button,.statistics .content .button button,.searchbar button{
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+}
+.buttons button,.content .button button,.statistics .content .button button,.searchbar button{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+.buttons button:first-child{
+    background-color: transparent;
+    color: var(--greycolor);
+    border: 1px solid var(--greycolor);
+    transition: all 0.3s ease;
+}
+.buttons button:last-child,.content .button button,.statistics .content .button button,.searchbar button{
+    background: linear-gradient(90deg, rgba(3,255,184,1) 37%, rgba(5,201,195,1) 56%);
+}
+.maincontents .imgbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.maincontents .box{
+    padding: 1em;
+    border: 2px solid var(--greycolor);
+    border-radius: 50%;
+}
+.maincontents{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3em;
+    background-color: black;
+
+}
+.maincontents .imgbox{
+    min-width: 30vw;
+    min-height: 65vh;
+    border-radius: 50%;
+    padding: 2em;
+    background: linear-gradient(90deg, rgba(3,255,184,1) 37%, rgba(5,201,195,1) 56%);
+}
+.maincontents .imgmobile{
+    position: relative;
+}
+.maincontents .imgbox .imgmobile .heading{
+    display: flex;
+    align-items: center;
+    position:absolute;
+    left: 1.3em;
+    top: 3.6em;
+}
+.maincontents .imgbox .imgmobile .heading h1{
+    font-size: 6em;
+    font-weight: lighter;
+}
+.maincontents .imgbox .imgmobile .heading ul li{
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 0.5em;
+    color: var(--greycolor);
+}
+.imgmobile img{
+    width: 12vw;
+    height: 47vh;
+    background-color: rgb(37, 37, 37);
+    border-radius: 1.5em;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.maincontents .content .mainheading h1{
+    color: rgb(228, 226, 226);
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 3em;
+    margin-top: -0.2em;
+}
+.maincontents .content .para p{
+    width: 45vw;
+    font-size: 0.9em;
+    color: var(--greycolor);
+    text-align: justify;
+}
+.content .button button,.statistics .content .button button{
+    margin-top: 1em;
+    padding: 1em 2em 1em 2em;
+    font-weight: 500;
+}
+
+main{
+    background: radial-gradient( rgba(3,255,184,1), rgba(5,201,195,1));
+}
+.maincontent{
+    background-color: rgba(12, 12, 12, 0.966);
+    backdrop-filter: blur(50px);
+}
+.lists ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    font-style: oblique;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.lists ul li{
+    color: var(--greycolor);
+}
+.lists ul li,.bottom-content,.statistics{
+    margin-top: 6em;
+}
+.currency-contents .button,.coin .button{
+    margin-top: 2.5em;
+}
+.currency-heading h1{
+    text-transform: capitalize;
+    color: rgb(224, 220, 220);
+    margin-top: 2em;
+    text-align: center;
+    word-spacing: 3px;
+    font-weight: 500;
+}
+.currency-contents,.coin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5em;
+    margin-top: 2.5em;
+    padding-bottom: 1em;
+}
+.currency-contents .bitcoin,.currency-contents .ethereum,.currency-contents .ripple,.coin .stellar,.coin .monero,.coin .cosmos{
+    background-color: black;
+    border: 2.5px solid rgb(43, 43, 43);
+    border-radius: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 3em 2em 3em;
+}
+.currency-contents .bitcoin-icon i,.currency-contents .ethereum-icon i,.currency-contents .ripple-icon i,.coin .stellar-icon i,.coin .monero-icon i,.coin .cosmos-icon i{
+    color: rgba(5,201,195,1);
+    font-size: 2.8em;
+    background-color: rgb(2, 71, 52);
+    padding: 0.35em;
+    border-radius: 50%;
+}
+.currency-contents .ethereum-icon i,.currency-contents .ripple-icon i{
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    font-size: 2.6em;
+}
+.currency-contents h2,.coin h2{
+    color: rgb(206, 204, 204);
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+.currency-contents h1,.coin h1{
+    color: rgb(2, 143, 103);
+    font-weight: 500;
+    font-size: 1.3em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+.currency-contents .button button,.coin .button button{
+    background: transparent;
+    padding: 0.5em 1.8em 0.5em 1.8em;
+    font-weight: 500;
+    font-size: 0.9em;
+    border: none;
+    outline: none;
+    border-radius: 0.5em;
+    transition: all 0.4s ease;
+    border: 1px solid  rgba(3,255,184,1);
+    color: rgba(3,255,184,1);
+}
+.currency-contents .button button:hover,.coin .button button:hover{
+    background: linear-gradient(90deg, rgba(3,255,184,1) 37%, rgba(5,201,195,1) 56%);
+    color: black;
+    
+}
+.one,.two,.bottom-content{
+    display: flex;
+    align-items: center;
+}
+.one,.two,.bottom-content{
+    justify-content: center;
+}
+.one,.two{
+    gap: 5em;
+}
+.bottom-content{
+    flex-direction: column;
+    gap: 1.5em;
+}
+.two{
+    flex-direction: row-reverse;
+    margin-top: 2.5em;
+}
+.statistics img,.statistics .content{
+    width: 30vw;
+}
+.statistics h1,.bottom-content .bt-heading h1{
+    color: rgb(221, 221, 221);
+    font-size: 1.7em;
+    font-weight: 500; 
+}
+.statistics p,.bottom-content p,footer .para p{
+    color: rgb(133, 133, 133);
+    font-size: 0.85em;
+}
+.bottom-content .para p{
+    width: 70vw;
+    text-align: center;
+}
+.bottom-content .searchbar{
+    width: 50vw;
+    position: relative;
+    margin-bottom: 6em;
+}
+.bottom-content .searchbar input{
+    background: black;
+    border: 1.7px solid rgb(133, 133, 133);
+    border-radius: 0.2em;
+    outline: none;
+    color: white;
+    font-size: 1em;
+    padding: 0.5em 10em 0.5em 1em;
+    width: 100%;
+}
+.bottom-content .searchbar button{
+    position: absolute;
+    right: 0.5em;
+    top: 0.47em;
+}
+footer{
+    background-color: black;
+    justify-content: space-between;
+}
+.footercontent .side .heading{
+    display: flex;
+    align-items: center;
+}
+.side{
+    margin-left: 1em;
+}
+footer .heading ul li{
+    color: var(--greycolor);
+}
+footer .para{
+    width: 10vw;
+}
+.footercontent .details h2{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 0.9em;
+    margin-top: 1.2em;
+    letter-spacing: 0.1em;
+}
+.footercontent,.footercontent .details{
+    display: flex;
+    align-items: flex-start;
+}
+
+.footercontent,.footercontent .details{
+    gap: 7em;
+}
+.footercontent .details{
+    justify-content: space-between;
+    width: 50vw;
+}
+.footercontent .details .about ul li,.footercontent .details .about ul li a,.footercontent .details .company ul li,.footercontent .details .company ul li a,.footercontent .details .support ul li,.footercontent .details .support ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(133, 133, 133);
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 2em;
+}
+.footercontent .details ul li a{
+    transition: all 0.3s ease;
+}
+.footercontent .details ul li a:hover{
+    color: white;
+}
+.footercontent .icons .icon-list ul{
+    display: flex;
+    gap: 0.6em;
+    list-style: none;
+    align-items: center;
+}
+.footercontent .icon-list ul li a{
+    font-size: 1.8em;
+    color: white;
+    border: 1px solid rgb(133, 133, 133);
+    border-radius: 0.2em;
+    padding: 0.2em 0.3em 0.2em 0.3em;
+}
+.footercontent .icon-list ul li:first-child a{
+    padding-left: 0.45em;
+    padding-right: 0.45em;
+}
+.footercontent .icon-list ul li a:hover{
+    background-color: rgba(3,255,184,1);
+    color: black;
+}
+.line{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 1px;
+    width: 100%;
+    background-color: rgb(71, 71, 71);
+}
+.foot p{
+    text-align: center;
+    color: rgb(133, 133, 133);
+    padding-bottom: 2em;
+}
+.foot p span{
+    color: white;
+}
